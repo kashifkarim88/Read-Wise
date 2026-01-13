@@ -26,6 +26,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // This line fixes the "Hydration failed" error caused by extensions
+        suppressHydrationWarning
       >
         {children}
       </body>
